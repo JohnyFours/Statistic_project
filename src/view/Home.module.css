@@ -1,0 +1,44 @@
+body {
+  padding: 0 3.75rem;
+  margin: 0 auto;
+}
+ul {
+  padding: 0;
+}
+.wrapHeader {
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.wrapMain {
+  display: grid;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapHeader {
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+  body {
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapHeader {
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    margin: 1rem auto;
+    margin-top: 0;
+  }
+  body {
+    padding: 0 0.5rem;
+    margin: 0 auto;
+  }
+}

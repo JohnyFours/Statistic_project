@@ -1,0 +1,35 @@
+.wrapLogo {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 84px;
+  color: #000000;
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .wrapLogo {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wrapLogo {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapLogo {
+    font-size: 3rem;
+    line-height: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapLogo {
+    font-size: 2rem;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,121 @@
+.backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #00000080;
+  z-index: 1000;
+}
+
+.modal {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 20px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 1.313rem;
+  z-index: 1000;
+}
+.modalWrapInfo {
+  display: grid;
+  width: 100%;
+}
+
+.modalCountryName {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.modalText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #666666;
+}
+
+.leftSideText {
+  display: flex;
+  align-items: center;
+}
+
+.modalImg {
+  margin-right: 1.813rem;
+}
+
+.modalCloseBtn {
+  border: none;
+  width: 171px;
+  height: 49px;
+  background: #2196f3;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.modalCloseBtn:hover {
+  box-shadow: 0px 0px 0px 1px #2196f3;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .modal {
+    width: 70%;
+    height: fit-content;
+  }
+
+  .modalWrapInfo {
+    width: 70%;
+  }
+  .modalText {
+    font-size: 10px;
+    line-height: 5px;
+  }
+  .modalCountryName {
+    font-size: 2rem;
+    line-height: 0;
+    margin: 1rem auto;
+  }
+  .modalCloseBtn {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 767px) {
+  .modal {
+    width: 70%;
+    height: fit-content;
+  }
+  .modalWrapInfo {
+    align-items: center;
+  }
+  .modalText {
+    font-size: 10px;
+    line-height: 5px;
+  }
+  .modalCountryName {
+    font-size: 2rem;
+    line-height: 0;
+    margin: 1rem auto;
+  }
+  .modalCloseBtn {
+    transform: scale(0.5);
+  }
+}
